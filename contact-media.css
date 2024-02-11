@@ -1,0 +1,79 @@
+@media (max-width: 1199.98px) { 
+
+/* .home{width: 20%;} */
+
+}
+
+@media (max-width: 991.98px) { 
+.home{
+font-size: medium;
+
+}
+.form-flex{
+    flex-wrap: wrap;
+}
+.menu{
+    margin: 20px;
+}
+.brands p{
+    font-size: large;
+    margin: 0;
+}
+.contact{
+    padding: 20px;
+    align-items: center;
+}
+.reach-details h2{
+    font-size: 40px;
+}
+.reach-contact h2{
+    font-size: 20px;
+}
+input{
+    margin: 0px;
+}
+input[type="submit"] {
+    width: 40%};
+ }
+
+@media (max-width: 767.98px) { 
+    .home{
+        width: 20%;
+        z-index: +2;
+     }
+    #button {
+        height: 30px;
+        width: 30px;
+        display: inline;
+        border: none;
+        margin: 5px;
+        border-radius: 2px;
+        box-shadow: 0 0 3px gray;
+        color: black;
+    }
+
+    .button-x {
+        height: 40px;
+        width: 30px;
+        display: inline;
+        text-align: center;
+        align-items: center;
+
+    }
+    .home {
+        visibility: hidden;
+        position: fixed;
+        padding: 30px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+ }
+
+@media (max-width: 500px) { 
+    .homepage{
+        display: inline-block;
+    }
+
+ }

@@ -1,0 +1,119 @@
+@media (max-width: 1199.98px) { 
+    .linear-text {     
+       font-size: 42px;
+    }  
+    .linear-bg{
+        height: 150px;      
+        top: 39%;
+    }
+}
+@media (max-width: 991.98px) { 
+    .home{
+        width: 20%;
+        z-index: +2;
+     }
+    #button {
+        height: 30px;
+        width: 30px;
+        display: inline;
+        border: none;
+        margin: 5px;
+        border-radius: 2px;
+        box-shadow: 0 0 3px gray;
+    }
+
+    .button-x {
+        display: inline;
+        text-align: center;
+    }
+    .home {
+        visibility: hidden;
+        position: fixed;
+
+    }
+    .home {
+        padding: 30px;
+    }
+
+    .linear-bg{
+        height: 110px;      
+        top: 31%;
+    }
+    .my-img2 svg{
+        top: 25%;
+        left: 12%;
+    }
+.signature{
+    top: 35%;
+    left: 48%;
+}
+.address{
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 767.98px) {
+    .home{
+        width: 20%;
+        z-index: +2;
+     }
+.besic-details{
+    width: 35%;
+}
+.linear-bg{
+    height: 100px;      
+    top: 32.5%;
+}
+.my-img2 svg{
+    top: 22%;
+}
+
+.linear-text{
+    font-size: 30px;
+}
+}
+
+
+@media (max-width: 575.98px) {
+.about{
+        margin: 10px;
+      } 
+.home{
+   width: 20%;
+   z-index: +2;
+}
+.besic-details{
+    width: 100%;
+}
+.linear-bg{
+    height: 188px; 
+    width: 90%;     
+    top: 46.5%;
+    transform: rotate(165deg);
+    left: 13%;
+}
+.linear-bg-img{
+    transform: rotate(351deg);
+
+}
+.my-img2 svg{
+    top: 25%;
+    width: 150px;
+    height: 150px;
+}
+.linear-text{
+    font-size: 40px;
+}
+.signature{
+    top: 50%;
+    left: 52%;
+}
+.services{
+        width: 100%;
+    }
+
+}
+

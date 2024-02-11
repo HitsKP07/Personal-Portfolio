@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/city-4667143_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+body a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.nev {
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/ciudad-maderas-MXbM1NrRqtI-unsplash-1170x490.jpg.webp);
+}
+
+
+.navbar {
+    display: grid;
+   grid-template-columns: 33.33fr 33.33fr 33.33fr;
+    justify-content: space-between;
+    padding: 30px 100px;
+    font-size: 18px;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:80%;
+}
+
+.navbar li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 5px;
+    color: black;
+}
+
+.Home {
+    background-color: blue;
+}
+
+.Home1,
+.Home2,
+.Home3,
+.Home4,
+.Home5 {
+    position: absolute;
+    background-color: white;
+    font-size: medium;
+    line-height: 40px;
+    visibility: hidden;
+    margin-top: 10px;
+    border: 3px transparent;
+    border-top: 5px solid blue;
+    margin-left: -15px;
+    padding: 20px;
+
+}
+
+
+
+.Home:hover .Home1 {
+    visibility: visible;
+}
+
+.Listing:hover {
+    background-color: blue;
+}
+
+.Listing:hover .Home2 {
+    visibility: visible;
+}
+
+.Property:hover {
+    background-color: blue;
+}
+
+.Property:hover .Home3 {
+    visibility: visible;
+}
+
+.pages:hover {
+    background-color: blue;
+}
+
+.pages:hover .Home4 {
+    visibility: visible;
+}
+
+.Idx:hover:hover {
+    background-color: blue;
+}
+
+.Idx:hover .Home5 {
+    visibility: visible;
+}
+
+
+.listing .list,.list2 * {
+    padding: 10px;
+    margin-right: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 15px;
+
+}
+.listing span{background-color: transparent;}
+
+.list:hover {
+    background-color: white;
+    color: black;
+}
+
+.listing .list {
+    border-radius: 20px;
+}
+
+.avanue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 450px;
+    background-color: white;
+    color: black;
+}
+
+.avan1 h3 {
+    color: blue;
+}
+
+.avan2,
+.av {
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.av * {
+    padding-right: 10px;
+}
+
+#site-search {
+    width: 100%;
+}
+
+
+.searchbox {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 15fr 10fr;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+
+}
+
+
+
+.searchbox p {
+    color: blue;
+    padding-top:12px ;
+}
+
+.searchbox * {
+   
+    margin-right: 20px;
+}
+
+.searchbox button {
+    background-color: blue;
+    color: white;
+    font-size: 20px;    
+    padding-top: 1 0px;
+}
+   
+    .button button{
+        border-radius: 5px;
+        border: none;
+        font-size: medium;
+    }
+
+.searchbox select:hover {
+    color: blue;
+}
+
+.searchbox button:hover {
+    background-color: rgba(0, 128, 0, 0.689);
+}
+
+.pagebox {
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+
+}
+
+.button {
+    text-align: center;
+}
+
+.pagebox button {
+    padding: 10px 30px 10px 30px;
+    background-color: blue;
+    font-size: larger;
+    color: white;
+
+}
+
+.pagebox1 {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+
+
+
+}
+
+.pagebox1 h1 {
+    padding-bottom: 20px;
+}
+
+.pagebox2 {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+
+}
+
+
+
+.page1 {
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+    font-size: 20px;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+
+
+
+}
+
+
+.page1 p {
+    display: inline;
+
+}
+
+.g,
+.pg2 {
+    visibility: hidden;
+}
+
+.page1:hover .pg2 {
+    visibility: visible;
+}
+
+.page1:hover .g {
+    visibility: visible;
+}
+
+
+.pageimg {
+    background: url(../img/img1.jpg);
+    background-size: cover;
+    
+
+}
+
+.pg1 {
+
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.p p,span {
+    background-color: green;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 18px;
+    color: white;
+}
+.p span{background-color: blue;}
+
+
+
+.g {
+    text-align: right;
+}
+
+
+
+.pg2 {
+    padding: 10px;
+    padding-top: 100px;
+    font-size: 30px;
+    /* background: chocolate; */
+    text-align: right;
+
+}
+
+.pagecontant {
+    /* text-align: center; */
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.pagecontant div {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.pagecontant h3,
+p {
+    display: inline;
+}
+
+.pagecontant h3 {
+    color: blue;
+    padding-right: 15px;
+}
+
+.pagecontant span {
+    margin-left: 80px;
+}
+
+.button {margin: 20px;}
+
+
+.details {
+    padding: 50px;
+    background-color: white;
+}
+
+.details h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    padding-top: 100px;
+}
+.inner-details{
+    display: grid;
+    grid-template-columns: 33.33fr 33.33fr 33.33fr;
+    margin-top: 50px;
+}
+.details img {
+    display: block;
+}
+
+.details1 {
+    display: grid;
+    grid-template-columns:  2fr 8fr;
+}
+
+.text {
+    padding: 0px 0px 50px 10px;
+
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.text p {
+    font-size: larger;
+}
+
+
+
+.feature-property {
+
+
+    margin: auto;
+    background-color: #E6E8F0;
+    font-size: larger;
+    padding-bottom: 50px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.feature span {
+    color: blue;
+    background-color: transparent;
+
+}
+
+.property {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 20px;
+}
+
+.my-img {
+    width: 80%;
+    padding-left: 50px;
+
+
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 6fr ;
+    padding: 100px 30px 100px 30px;
+    background-color: white;
+    font-size: large;
+
+
+}
+
+.about {
+    margin-top: 10px;
+}
+
+.about h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.about h5{color: blue;}
+
+.transparent-beckground {
+    text-align: center;
+    padding: 100px;
+    background: transparent;
+
+}
+
+.transparent-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+    width: 30%;
+    margin: auto;
+}
+
+.color-button button {
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    color: white;
+    padding:15px 18px;
+}
+.color-button:hover button{
+    background: transparent;
+    border-color: white;
+
+}
+.noncolor-button:hover button{
+    background: blue;
+    border-color: blue;
+}
+.noncolor-button button {
+    background: transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 18px;
+}
+
+
+
+.latest-news {
+    background-color: white;
+    padding: 50px;
+
+}
+
+.latest-news h1 {
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+
+.news-itms {
+    padding: 30px;
+    overflow: hidden;
+    
+    
+}
+.news img{
+    overflow: hidden;
+
+}
+.news-itms img:hover{scale: 1.1;}
+
+
+
+
+.news-itms img,.img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.partner {
+    padding: 50px;
+    background-color: gainsboro;
+}
+
+.partnertext {
+    font-size: 20px;
+    text-align: center;
+}
+
+.partnerimg {
+    text-align: center;
+    padding: 50px;
+}
+
+.partnerimg * {
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+footer {
+    background-color: #303441;
+    color: white;
+}
+
+.footdiv,
+.footdiv4 {
+    padding: 50px;
+}
+
+.footdiv h2 {
+    padding-bottom: 20px;
+}
+
+.footer1
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+   
+}
+
+.inner-foot-div a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footdiv4 h2 {
+    padding-bottom: 10px;
+}
+
+.footdiv4 input {
+    padding: 15px 30px 15px 30px;
+}
+
+.footdiv4 button {
+
+    padding: 15px 85px 15px 85px;
+    background-color: blue;
+    color: white;
+
+}
+.footdiv span{
+padding: 0;}
+
+.footdiv span a{color: #358DD7;}
+
+.ex-foot {
+    text-align: center;
+    background-color: #303441;
+}
+
+
+.ex-foot span * {border: none;}
+ 
+.ex-foot span{background-color: transparent;}
+
+.ex-foot a {
+    color: #E6E8F0;
+    padding-left: 30px;
+    border: 2px transparent;
+    border-right: 2px solid white;
+    padding-right:5px ;
+}
+
+.foot-end {
+    justify-content: space-between;
+    padding: 20px ;
+    display: grid;
+    background-color: #303441;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.foot-end i {
+    font-size: larger;
+    padding-right: 30px;
+}
+.end{text-align: right;}

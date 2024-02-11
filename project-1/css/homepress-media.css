@@ -1,0 +1,74 @@
+@media (max-width: 1022px) {
+   .navbar {padding: 30px 20px;width: 100%;}
+   
+   .navbar li{margin-right: 0px;padding: 10px;}
+
+    .Home1,.Home2,.Home3,.Home4,.Home5{margin-left:-10px;line-height: 30px;}
+
+   .page1{width: 48%;}
+
+   .searchbox {flex-wrap: wrap;}
+   
+   .searchbox * {width:50%;}
+
+   
+   .searchbox p{padding-top: 20px;}
+
+
+
+    .inner-details img{height: 30%; width: 30%;}
+
+    .details1{width: 33.33%;}
+
+    .about-me img{height: 80%;}
+
+    .partnerimg *{ width: 40%; }
+
+    .footdiv4{width: 30%;}
+
+    .ex-foot span * {border: none;}
+
+    .ex-foot span{background-color: transparent;}
+    .foot-end i{padding-right: 10px;}
+  }
+
+  @media (max-width:500px) {
+
+    .navbar h1,ul{padding-bottom: 20px;}
+
+    .avanue{width: 100%;flex-wrap: wrap;}
+
+    .avan1{text-align: center; padding-bottom: 20px;}
+  
+    .searchbox * {width:100%;}
+
+    .pagebox1{width: 100%;}
+
+    .inner-details *{width: fit-content;}
+
+    .page1{width: 100%;}
+
+    .feature{padding:20px;}
+
+    .my-img{width: 40%; margin-top: 40px;}
+
+    .about{margin-top: 0;}
+
+    .transparent-beckground {padding: 50px;}
+
+    .news *{width: fit-content;}
+
+    .partnerimg *{width: 100%;padding: 30px;}
+
+    .footdiv,.footdiv4{width:50%;padding: 30px;}
+
+    .footdiv4{margin-left: -50px;}
+
+    .footdiv{margin-left: -50px;}
+
+    .foot-end {padding: 10px;}
+
+    
+    .end{width: 100%;text-align: right;}
+
+}

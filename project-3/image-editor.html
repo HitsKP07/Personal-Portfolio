@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link href=' http://fonts.googleapis.com/css?family=' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="image-editor.css">
+</head>
+
+<body>
+
+    <nav class="d-flex p-3  justify-content-between">
+        <div class="d-flex align-items-center gap-2"><img src="img/Screenshot 2023-12-18 125144.png" width="10%"
+                class="shadow p-1 rounded-circle " alt="">
+            <a href="Homepage.html"><strong>Convalexa</strong></a>
+        </div>
+        <div class="d-flex justify-content-end nav gap-4 align-items-center">
+            <button class="rounded-pill p-2 w-50 text-white"><img src="img/Screenshot 2023-12-18 132710.png"
+                width="10% " class=" rounded-circle"> <strong><a class="text-white" href="Homepage.html">Homepage</a></strong>
+        </button>
+           
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- editing start -->
+    <div class="secondary">
+    <div class=" margin-box text-center">
+        <p class="blue"> <strong>Exceptional   <span style="color: rgba(0, 0, 255, 0.472);">Pictures </span>Deserve An Exceptional Edit.
+                </strong></p>
+                <p class="blue"> <strong><span style="color: rgba(88, 88, 107, 0.472);">Write your own.  </span>🙂</strong></p>
+        <p class="h4">Your passion is capturing great moments. So is ours. Inspire, Explore,<br> Create & Showcase. Think Imagine Create. 
+            
+        </p>
+        <div class=" mt-5  width-100 w-75 edit-box2 ">
+            <div class="container disable">
+               
+                <div class="wrapper">
+                    <div class="editor-panel">
+                        <div class="filter">
+                            <label class="title">Filters</label>
+                            <div class="options">
+                                <button id="brightness" class="active">Brightness</button>
+                                <button id="saturation">Saturation</button>
+                                <button id="inversion">Inversion</button>
+                                <button id="grayscale">Grayscale</button>
+                            </div>
+                            <div class="slider">
+                                <div class="filter-info">
+                                    <p class="name">Brighteness</p>
+                                    <p class="value">100%</p>
+                                </div>
+                                <input type="range" value="100" min="0" max="200">
+                            </div>
+                        </div>
+                        <div class="rotate">
+                            <label class="title">Rotate & Flip</label>
+                            <div class="options">
+                                <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                                <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                                <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                                <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-img border">
+                        <img src="image-placeholder.svg" alt="preview-img">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="reset-filter">Reset Filters</button>
+                    <div class="row">
+                        <input type="file" class="file-input" accept="image/*" hidden>
+                        <button class="choose-img">Choose Image</button>
+                        <button class="save-img">Save Image</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- container end -->
+
+
+    <div class="laser-about text-white width-100  text-center">
+        <div class="w-75 edit-box2 width-100">
+            <p class="blue text-white "><strong>How it works?</strong></p>
+            <p class="letter-specing  ">
+                We are using cutting edge neural networks or Artificial Intelligence to process images and delete
+                background 100% automatically and precisely
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- why use section -->
+    <div>
+        <p class="text-center m-5 blue"><strong> Why use it?</strong></p>
+        <div class="d-flex justify-content-center wrap gap-5 text-center">
+            <div class="w-25 width-75">
+                <img src="img/Screenshot-user.png" alt="">
+                <p class="letter-specing "><strong>Free high quality images</strong></p>
+                <p class="small-font text-muted">Get high quality images with transparent background</p>
+            </div>
+            <div class="w-25 width-75">
+                <img src="img/Screenshot-magic.png" alt="">
+                <p class="letter-specing"><strong>Fast and clean cutouts images</strong></p>
+                <p class="small-font text-muted">We process 100,000+ images daily with average of 5 seconds per image
+                </p>
+            </div>
+            <div class="w-25 width-75">
+                <img src="img/Screenshot-thumb.png" alt="">
+                <p class="letter-specing"><strong>Design the way you want</strong></p>
+                <p class="small-font text-muted">Improve your designs further with our image editor. Add colors,
+                    gradients and stock photos</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- laser eye feature example -->
+    <!-- 1 -->
+    <div class=" d-flex p-5 text-center wrap justify-content-center container-div2 ">
+        <div class=" width-100 centers">
+            <img src="img/download.jpg" width="100%" alt="">
+        </div>
+        <div class=" width-100 mt-3 ms-3 centers2">
+            <img src="img/Screenshot 2023-12-18 215357.png" class=" mt-5" width="15%" alt="">
+            <p class="h1 text-primary blue center-text">
+                <strong>Automatic detect subjects on photos</strong>
+            </p>
+            <p class="features__item-text width-100 small-font ">
+                Our algorithms can easily process imae, and make edit with smooth and clear edges
+            </p>
+
+        </div>
+
+    </div>
+    <!-- 2 -->
+
+
+    <div class="text-center  p-5">
+        <p class="blue text-primary ">Speed up your workflow and create beautiful visuals</p>
+        <p class="features__item-text">Process hundreds of photos easily for free. Unleash your creativity and push your
+            designs skills on another level</p>
+        <img src="img/news_preview_mob_image__preview_314.jpg" width="100%" alt="">
+    </div>
+
+
+
+
+    <article class="article p-5 width-100 ">
+        <p class="blue text-center">FAQ</p>
+
+        <div class="toogle toogle1 ">
+            <p class="non-hide-p"> What can you do with image editing websites?</p>
+            <p class="hide-p  ">These websites offer a range of functionalities, including brightness, saturation, applying
+                filters, adjusting colors, and more.
+            </p>
+        </div>
+
+        <div class="toogle toogle3">
+            <p class="non-hide-p">Are image editing websites free to use?</p>
+            <p class="hide-p ">Many image editing websites offer free basic features, but some advanced tools or premium
+                effects may require a subscription or one-time payment.
+            </p>
+        </div>
+        <div class="toogle toogle4">
+            <p class="non-hide-p">Which are some popular image editing websites?</p>
+            <p class="hide-p ">There are several well-known image editing websites, including Adobe Photoshop Express,
+                Canva, Pixlr, GIMP, Fotor, and PicMonkey. Each platform has its unique features and target audience.
+            </p>
+        </div>
+        <div class="toogle toogle5">
+            <p class="non-hide-p">How do I choose the right image editing website?</p>
+            <p class="hide-p ">Consider your editing needs, skill level, and budget. Look for intuitive interfaces, a
+                range of editing tools, customer support, and compatibility with different devices. Also, explore
+                reviews and tutorials to gauge user experiences before settling on a platform.
+            </p>
+        </div>
+    </article>
+
+    <div class="d-flex wrap width-100 pad-box contact">
+        <div class="contact-1 width-100">
+            <p class="non-hide-p text-white">Get fresh updates on Email</p>
+            <p class=" text-white   ">We'll never share your email address and you can  out at any time,<br> we
+                promise</p>
+        </div>
+        <div class="contact-2 text-end width-100 d-flex">
+            <form action="" class="d-flex">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" size="100">
+                <button type="submit" for="email">subscribe</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="d-flex wrap justify-content-around  toogle">
+            <div class="w-25 width-75 art-div p-5">
+                <span class="d-flex align-items-center gap-2"><img src="img/Screenshot 2023-12-18 125144.png"
+                        width="10%" class="shadow p-1 rounded-circle " alt="">
+                    <h4>Convalexa</h4>
+                </span>
+                <a> images editing for any occasion. No design skills needed. Powered
+                    by Artificial Intelligence.</a>
+            </div>
+
+            <div class="w-25 width-75 art-div p-5">
+                <p>Features</p>
+                <a href="">AI Headshots Generator</a>
+                <a href="">AI Avatar Generator</a>
+                <a href="">Social Media Profile Pictures</a>
+                <a href="">Messenger Display Pictures</a>
+                <a href="">Creative Profile Pictures</a>
+                <a href="">Emoji Profile Pictures</a>
+            </div>
+
+            <div class="w-25 width-75 art-div p-5">
+                <p>Free Tools</p>
+                <a href="">Remove Background</a>
+
+            </div>
+
+            <div class="w-25 width-75 art-div p-5">
+
+            </div>
+        </div>
+
+        <div class="d-flex wrap justify-content-between  art-nav p-4">
+            <div class="d-flex gap-5">
+                <a href="">Designed and created by Hitesh Prajapati</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+            <div class="non-hide-p gap-5">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+    <script>
+
+const fileInput = document.querySelector(".file-input"),
+filterOptions = document.querySelectorAll(".filter button"),
+filterName = document.querySelector(".filter-info .name"),
+filterValue = document.querySelector(".filter-info .value"),
+filterSlider = document.querySelector(".slider input"),
+rotateOptions = document.querySelectorAll(".rotate button"),
+previewImg = document.querySelector(".preview-img img"),
+resetFilterBtn = document.querySelector(".reset-filter"),
+chooseImgBtn = document.querySelector(".choose-img"),
+saveImgBtn = document.querySelector(".save-img");
+let brightness = "100", saturation = "100", inversion = "0", grayscale = "0";
+let rotate = 0, flipHorizontal = 1, flipVertical = 1;
+const loadImage = () => {
+    let file = fileInput.files[0];
+    if(!file) return;
+    previewImg.src = URL.createObjectURL(file);
+    previewImg.addEventListener("load", () => {
+        resetFilterBtn.click();
+        document.querySelector(".container").classList.remove("disable");
+    });
+}
+const applyFilter = () => {
+    previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
+    previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
+}
+filterOptions.forEach(option => {
+    option.addEventListener("click", () => {
+        document.querySelector(".active").classList.remove("active");
+        option.classList.add("active");
+        filterName.innerText = option.innerText;
+        if(option.id === "brightness") {
+            filterSlider.max = "200";
+            filterSlider.value = brightness;
+            filterValue.innerText = `${brightness}%`;
+        } else if(option.id === "saturation") {
+            filterSlider.max = "200";
+            filterSlider.value = saturation;
+            filterValue.innerText = `${saturation}%`
+        } else if(option.id === "inversion") {
+            filterSlider.max = "100";
+            filterSlider.value = inversion;
+            filterValue.innerText = `${inversion}%`;
+        } else {
+            filterSlider.max = "100";
+            filterSlider.value = grayscale;
+            filterValue.innerText = `${grayscale}%`;
+        }
+    });
+});
+const updateFilter = () => {
+    filterValue.innerText = `${filterSlider.value}%`;
+    const selectedFilter = document.querySelector(".filter .active");
+    if(selectedFilter.id === "brightness") {
+        brightness = filterSlider.value;
+    } else if(selectedFilter.id === "saturation") {
+        saturation = filterSlider.value;
+    } else if(selectedFilter.id === "inversion") {
+        inversion = filterSlider.value;
+    } else {
+        grayscale = filterSlider.value;
+    }
+    applyFilter();
+}
+rotateOptions.forEach(option => {
+    option.addEventListener("click", () => {
+        if(option.id === "left") {
+            rotate -= 90;
+        } else if(option.id === "right") {
+            rotate += 90;
+        } else if(option.id === "horizontal") {
+            flipHorizontal = flipHorizontal === 1 ? -1 : 1;
+        } else {
+            flipVertical = flipVertical === 1 ? -1 : 1;
+        }
+        applyFilter();
+    });
+});
+const resetFilter = () => {
+    brightness = "100"; saturation = "100"; inversion = "0"; grayscale = "0";
+    rotate = 0; flipHorizontal = 1; flipVertical = 1;
+    filterOptions[0].click();
+    applyFilter();
+}
+const saveImage = () => {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = previewImg.naturalWidth;
+    canvas.height = previewImg.naturalHeight;
+    
+    ctx.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+    if(rotate !== 0) {
+        ctx.rotate(rotate * Math.PI / 180);
+    }
+    ctx.scale(flipHorizontal, flipVertical);
+    ctx.drawImage(previewImg, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
+    
+    const link = document.createElement("a");
+    link.download = "image.jpg";
+    link.href = canvas.toDataURL();
+    link.click();
+}
+filterSlider.addEventListener("input", updateFilter);
+resetFilterBtn.addEventListener("click", resetFilter);
+saveImgBtn.addEventListener("click", saveImage);
+fileInput.addEventListener("change", loadImage);
+chooseImgBtn.addEventListener("click", () => fileInput.click());
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+@media (max-width: 1022px) {
+    .navbar {padding: 20px 0;grid-template-columns: 2.5fr 4fr 3.5fr;}
+
+    .menu{grid-template-rows: auto;align-items: center;}
+    
+    .navbar li{padding: 10px;}   
+ 
+    .Home1,.Home2,.Home3,.Home4,.Home5{line-height: 30px;}
+ 
+    
+ 
+    .searchbox p {padding-top: 10px;}
+ 
+ 
+     .inner-details img{height: 40%; width: 100%;}
+
+     .about h3 {
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+ 
+    
+    .my-img{padding-left: 0;}
+     .text {
+        padding: 0px 0px 0px 10px;
+    
+    }
+    .partnerimg{padding: 0;}
+ 
+     .partnerimg *{ width: 40%; }
+ 
+ 
+    .foot-end i{padding-right: 10px;}
+   }
+ 
+   @media (max-width:500px) {
+    .navbar{grid-template-columns: 1fr}
+
+     .navbar h1,ul{padding-bottom: 20px;}
+
+     .Idx .Home5{
+        margin-left: -180px;
+    }
+
+     .avanue{grid-template-columns: 1fr;}
+ 
+ 
+     .avan1{padding-bottom: 20px;}
+
+     .avan2{ grid-template-columns: 1fr 1fr ; text-align: center;}
+   
+     .searchbox * {width:100%;padding: ox;}
+     .searchbox button {padding: 10;}
+
+     .searchbox {
+
+    grid-template-columns: 25fr 25fr ;
+    grid-template-rows: 50% 50% 50%;
+    text-align: center;
+    padding: 10px;
+
+     }
+ 
+     .pagebox1{width: 100%;}
+     .pagebox2{grid-template-columns: 1fr; }
+ 
+     .inner-details {grid-template-columns: 1fr;}
+     
+     .inner-details  *{padding-bottom: 15px;}
+     .page1{width: 100%;}
+     
+     .Home5{ 
+        margin-left: -150px;
+        z-index: 100;
+    
+    }
+
+    .property{
+    grid-template-columns: 1fr ;
+
+    }
+ 
+     .feature{padding:20px;}
+ 
+     .my-img{width: 100%; height: 100%; margin-top: 0px; }
+     .my-img img {width: 50%;}
+ 
+     .about-me{display: grid; grid-template-columns:  1fr;grid-template-rows: 50% 50%;}
+    
+      .transparent-button{width: auto;}
+     .transparent-beckground {padding: 50px;}
+ 
+     .news *{width: fit-content;}
+     .news{grid-template-columns: 1fr;}
+
+     .footer1{display: grid;grid-template-columns: 1fr 1fr; padding-left: 50px;}
+ 
+     .partnerimg *{width: 100%;padding: 30px;}
+ 
+     .footdiv,.footdiv4{width:50%;padding: 30px;}
+ 
+     .footdiv4{margin-left: -50px;}
+ 
+     .footdiv{margin-left: -50px;}
+ 
+     .foot-end {padding: 10px;}
+ 
+     
+     .end{width: 100%;text-align: right;}
+ 
+ }

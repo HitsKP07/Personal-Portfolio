@@ -1,0 +1,102 @@
+@media (max-width: 1022px) {
+    .navbar {
+        grid-template-columns: 1fr 9fr;
+        padding: 10px 10px;
+
+    }
+
+    .lysting1 {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        grid-template-columns: 1fr;
+    }
+
+    .Idx .Home5 {
+        margin-left: -180px;
+    }
+
+
+    .color-button button {
+        padding: 0px 20px 0 5px;
+    }
+
+    .searchbox,
+    .compony {
+        grid-template-columns: 15fr 15fr;
+    }
+
+    .lysting {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0;
+        padding: 20px;
+
+    }
+
+    .appartment-type,
+    .compony {
+        padding: 20px;
+    }
+
+    .inquiry {
+        grid-template-columns: 1fr;
+
+    }
+
+    .form {
+        padding: 50px;
+    }
+
+    .agent-team,
+    .clint {
+        grid-template-columns: 1fr;
+
+    }
+
+    .boy {
+        padding-bottom: 50px;
+    }
+
+    .clint {
+        padding: 20px;
+    }
+
+    .agent {
+        text-align: left;
+    }
+
+    .compony img {
+        width: 80%;
+        padding-bottom: 10px;
+    }
+
+    .frist-footer {
+        grid-template-columns: 4fr 6fr;
+
+    }
+
+    .foot-contant {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .foot-contant * {
+        padding-right: 5px;
+        padding-bottom: 0px;
+
+    }
+
+    .foot-contant div {
+        padding-bottom: 10px;
+    }
+
+    .nevcontant {
+        padding: 10px;
+        text-align: center;
+    }
+
+}
