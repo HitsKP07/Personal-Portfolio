@@ -16,10 +16,12 @@
     
     <!-- sidebar -->
     <div class="homepage">
-        <input type="button" value="=" id="button">
-        <div class="home">
-            <input type="button" value="X" class="button-x">
+         <!-- sidebar -->
+         <div class="home">
+            <img src="img/logo.png" alt="" width="9%" class="logo">
             <h2>Hit.</h2>
+            
+             <div class="home-sidebar">
             <ul class="menu">
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -36,6 +38,15 @@
 
                 <p>Copyright ©2024 Hitesh Prajapati. All right reserved.</p>
             </div>
+             </div>
+             <button id="button"><i class="fa-solid fa-bars"></i></button>
+             <ul  id="menu">
+                <li><a href="Index.html">Home</a></li> <br>
+                <li><a href="about.html">About</a></li> <br>
+                <li><a href="works.html">Works</a></li> <br>
+                <li><a href="">C.V.</a></li> <br>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
 
      <div class="contact">
@@ -61,7 +72,7 @@
 
      <div class="reach-out">                
     
-    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+    <form action="submit_form.php" method="post" enctype="multipart/form-data" netlify>
         <h3>Any Project ?</h3>
      <div class="form-flex">
         <!-- <label for="name">Name:</label> -->

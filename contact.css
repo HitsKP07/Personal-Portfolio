@@ -11,30 +11,40 @@ body{
     src: url(fonts/IBMPlexSans-Regular.ttf);
 }
 
+
 .homepage {
     display: flex;
-    
 }
 .main{
     display: inline-block;
 }
-
-#button {
+.logo,#button,#menu{
     display: none;
-    padding: 0px 12px;
+    }
+
+
+
+.home {
+    background-color: black;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 17px;
 }
 
-.button-x {
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: none;
-    top: 5%;
-    left: 85%;
-    padding: 10px 12px;
-    transform: translate(-50%, -50%);
+.home li {
+    list-style-type: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 1px;
 }
+
+.home li:hover {
+    border: 2px solid white;
+
+}
+
 .menu {
     color: #FFF;
     line-height: 2;

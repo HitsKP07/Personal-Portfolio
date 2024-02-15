@@ -1,10 +1,19 @@
-const btn = document.getElementById("button")
-const home = document.querySelector(".home")
+const btn = document.getElementById('button')
+const menu = document.getElementById('menu')
 
 btn.addEventListener("click", function () {
-  home.style.visibility = "visible";
+  if (menu.style.display == 'none') 
+  {
+    menu.style.display = 'inline-block';
+    console.log("show");
+  }
+   else {
+    menu.style.display = "none";
+  }
 });
+var buton = document.getElementsByTagName('button')
+buton.addEventListener("click",()=>{
+buton.style.opacity ='.8'
+}
+)
 
-document.querySelector(".button-x").addEventListener("click", function () {
-  home.style.visibility = "hidden";
-});

@@ -16,14 +16,62 @@
 }
 .brands p{
     font-size: 15px;
+    margin-top: 30px;
 }
 .brands i{
     margin-bottom: 9px;
+}
+.works{
+    margin: auto;
+    gap: 72px 50px;
+    margin-top: 75px;
 }
 }
 
 
 @media (max-width: 767.98px) { 
+    .homepage {
+       
+        display: inline;
+
+    }
+    .home,.home-sidebar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding:0 10px 0 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .home h2{
+        display: none;
+    }
+    .menu{
+        display: flex;
+       margin:auto;
+       gap: 8px;
+        
+    }
+    .brands{
+        display: flex;
+        gap: 10px;
+    }
+    .brands p{
+        display: none;
+    }
+
+    .works{
+        gap: 90px 90px;
+        margin-top: 92px;
+    
+
+    }
     .projects h1{
        font-size: 18px;
     }
@@ -31,41 +79,58 @@
 .projects{
     padding: 0;   
 }
-.home {
-    visibility: hidden;
-    position: fixed;
-    width: 30%;
-    z-index: 1;
-
-}
-
-.main {
-    line-height: 1;
-    padding: 10px;
-}
-
-#button {
-    height: 30px;
-    width: 30px;
-    display: inline;
-    border: none;
-    margin: 5px;
-    border-radius: 2px;
-    box-shadow: 0 0 3px gray;
-}
-
-.button-x {
-    display: inline;
-}
 
 }
 @media (max-width: 575.98px) { 
-.project-img-hidden{
-    display: inline-block;
-}
-.project-img{
-    display: none;
-}
+    body{
+        overflow: scroll;
+    }
+    .works{
+    grid-template-columns: 1fr ;
+
+    }
+
+    .home-sidebar{
+        display: none;
+    }
+    .home{
+          justify-content: space-between;
+    }
+    #button{
+        display: inline-block;
+        padding: 5px 7px;
+        font-size: large;
+        margin: 0 10px;
+    }
+    #menu{
+        position: absolute;
+        top: 9%;
+        left: 71.5%;
+        height: 250px;
+        width: 150px;
+        background-color: red;
+        text-align: center;
+        line-height: 2.3;
+        border: none;
+        font-size: larger;
+        z-index: +5;
+
+    }
+    #menu li{
+        display: inline;
+    }
+    #menu a{
+        color: white;
+        text-decoration: none;
+        /* display: block; */
+        font-weight: 500;
+        text-transform: uppercase;
+    
+    }
+    .home h2{
+        display: inline-block ;
+    }
+    
 .project-details{
     width: 100%;
 }

@@ -41,39 +41,84 @@ input[type="submit"] {
         width: 20%;
         z-index: +2;
      }
-    #button {
-        height: 30px;
-        width: 30px;
-        display: inline;
-        border: none;
-        margin: 5px;
-        border-radius: 2px;
-        box-shadow: 0 0 3px gray;
-        color: black;
+    .homepage {
+    display: inline;
     }
-
-    .button-x {
-        height: 40px;
-        width: 30px;
-        display: inline;
-        text-align: center;
+    .home,.home-sidebar{
+        display: flex;
+        justify-content: space-around;
         align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 70px;
+    }
+    .logo{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .home h2{
+        display: none;
+    }
+    .menu{
+        display: flex;
+       margin: auto;
+       gap: 8px;
+        
+    }
+    .brands{
+        display: flex;
+        gap: 10px;
+    }
+    .brands p{
+        display: none;
+    }
 
-    }
-    .home {
-        visibility: hidden;
-        position: fixed;
-        padding: 30px;
-    }
     .contact{
         grid-template-columns: 1fr;
     }
 
  }
-
-@media (max-width: 500px) { 
-    .homepage{
-        display: inline-block;
+@media (max-width:575.98px) {
+    
+    .home-sidebar{
+        display: none;
     }
+    .home,.home-sidebar{
+          justify-content: space-between;
+    }
+    #button{
+        display: inline-block;
+        padding: 5px 7px;
+        font-size: large;
+        margin: 0 10px;
+    }
+  
+    #menu{
+        position: absolute;
+        top: 13.8%;
+        left: 70%;
+        height: 250px;
+        width: 150px;
+        background-color: red;
+        text-align: center;
+        line-height: 2.3;
+        border: none;
+        font-size: larger;
+        z-index: +5;
 
- }
+    }
+    #menu li{
+        display: inline;
+    }
+    #menu a{
+        color: white;
+        text-decoration: none;
+        /* display: block; */
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+    .home h2{
+        display: inline-block ;
+    }
+}

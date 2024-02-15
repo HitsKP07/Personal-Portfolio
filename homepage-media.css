@@ -33,29 +33,41 @@
  }
 
 @media (max-width: 991.98px) { 
+    body{
+        overflow-y: hidden;
+    }
     .home{
         width: 20%;
     }
+    .menu{
+        margin-bottom: 2px;
+    }
+    .brands p{
+        font-size: 12px;
+    }
     .svg-1 {
-        top: 5%;
+        width: 280px;
+        top: 0%;
         left: -15%;
     }
 
     .svg-2 {
-    height:200 ;
-        top: 45%;
-        left: 57%;
+        height:250px ;
+        width: 350px;
+        top: 41%;
+        left: 58%;
     }
 
     .svg-3 {
-        height:200 ;    
-        top: 80%;
+        height: 250px; ;    
+        top: 75%;
         left: 45%;
     }
 
     .svg-4 {
-
-        top: 92%;
+        height:270px ;    
+        width: 240px;
+        top: 85%;
         left: 80%;
     }
 
@@ -64,10 +76,38 @@
  }
 
 @media (max-width: 767.98px) { 
-    .home {
-        visibility: hidden;
-        position: fixed;
+    .homepage {
+       
+        display: inline;
 
+    }
+    .home,.home-sidebar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        height: 70px;
+    }
+    .logo{
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .home h2{
+        display: none;
+    }
+    .menu{
+        display: flex;
+       margin-top: 70px;
+       gap: 8px;
+        
+    }
+    .brands{
+        display: flex;
+        gap: 10px;
+    }
+    .brands p{
+        display: none;
     }
 
     .main {
@@ -75,53 +115,77 @@
         padding: 10px;
     }
 
-    #button {
-        height: 30px;
-        width: 50px;
-        display: inline;
-        border: none;
-        margin: 5px;
-        border-radius: 2px;
-        box-shadow: 0 0 3px gray;
-    }
-
-    .button-x {
-        display: inline;
-    }
     .svg-1 {
-        width: 280px;
-        top: 6%;
+        top: 0%;
         left: -15%;
     }
 
     .svg-2 {
-    height:260px ;
-    width: 350px;
-        top: 43%;
+    
+        top: 41%;
         left: 50%;
     }
 
     .svg-3 {
-        height:250px ;    
-        top: 72%;
+          
+        top: 70%;
         left: 42%;
     }
 
     .svg-4 {
-        height:270px ;    
-        width: 248px;
+       
         top: 84%;
-        left: 67%;
+        left: 66%;
     }
 
     .my-photo img {
         margin-left: -20%;
+        border-radius: 50%;
+        
     }
 
 }
 
 @media (max-width: 575.98px) { 
+    .home-sidebar{
+        display: none;
+    }
+    .home,.home-sidebar{
+          justify-content: space-between;
+    }
+    #button{
+        display: inline-block;
+        padding: 5px 7px;
+        font-size: large;
+        margin: 0 10px;
+    }
+    #menu{
+        position: absolute;
+        top: 12.5%;
+        left: 71.5%;
+        height: 250px;
+        width: 150px;
+        background-color: red;
+        text-align: center;
+        line-height: 2.3;
+        border: none;
+        font-size: larger;
+        z-index: +5;
+    }
+    #menu li{
+        display: inline;
+    }
+    #menu a{
+        color: white;
+        text-decoration: none;
+        /* display: block; */
+        font-weight: 500;
+        text-transform: uppercase;
 
+    }
+    .home h2{
+        display: inline-block ;
+    }
     .my-detail{
         width: 100%;
     }
@@ -134,20 +198,20 @@
     .svg-2 {
     height:250px ;
     width: 350px;
-        top: 42%;
+        top: 43%;
         left: 50%;
     }
 
     .svg-3 {
         height:230px ;    
-        top: 74%;
+        top: 76%;
         left: 35%;
     }
 
     .svg-4 {
         height:270px ;    
         width: 248px;
-        top: 83%;
+        top: 86%;
         left: 75%;
     }
 
